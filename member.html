@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".signUp-form").hide();
+        $(".signUp").css("background","#f0f0f0");
+
+        $(".signIn").click(function(){
+          $(".signUp-form").hide();
+          $(".signIn-form").show();
+          $(".signUp").css("background","#f0f0f0");
+          $(".signIn").css("background","#fff");
+        });
+
+        $(".signUp").click(function(){
+          $(".signUp-form").show();
+          $(".signIn-form").hide();
+          $(".signUp").css("background","#fff");
+          $(".signIn").css("background","#f0f0f0");
+        });
+      });
+    </script>
+
+  </head>
+  <body>
+
+    <div class="grid-container">
+      <div class="header">
+        <div class="container">
+            <nav>
+              <div class="logo">
+                    <a href="index.html"><mark class="orange">AB</mark></a>
+
+
+              </div>
+              <div class="cta">
+                <input placeholder="Search for book"type="text">
+                <button> <i class="fa fa-search" aria-hidden="true"></i></button>
+
+              </div>
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  <div class="nav-wrapper">
+                        <ul>
+                              <li><a href="sub.html">Overview</a></li>
+                              <li><a href="prodetails.html">Prices</a></li>
+                              <li><a href="purchase.html">Purchase</a></li>
+                        </ul>
+                  </div>
+                  <div class="sya">
+                    <!-- Tab Menu Sign in and Sign up -->
+                    <div class="container-display">
+                      <div class="signIn">Sign In</div>
+                      <div class="signUp">Sign Up</div>
+                    </div>
+
+                    <!-- Container body -->
+                    <div class="main">
+                        <!-- Sign in -->
+                      <div class="container-sya">
+                        <div class="signIn-form">
+                          <h2>Sign In</h2>
+                            <input type="text" class="input-box" placeholder="Username"><br>
+                            <input type="password" class="input-box" placeholder="Password"><br>
+                            <input style="float: left; margin: 10px 10px 10px 0;" type="checkbox"><span style="font-size: 13px; float: left; margin: 7px 10px 10px 0;">Remember password</span>
+                            <table width="100%">
+                              <tr>
+                                <td><button onclick="window.location.href='index2.html';" class="back">Back</button>
+                                <input onclick="window.location.href='index.html';" type="submit" value="Sign In"></td>
+                              </tr>
+                            </table>
+                            <p>You don't have an account? Sign Up</p>
+                        </div>
+                        <!-- Sign Up -->
+                        <div class="signUp-form">
+                          <h2>Sign Up</h2>
+                            <input type="text" class="input-box" placeholder="Username"><br>
+                            <input type="text" class="input-box" placeholder="Email"><br>
+                            <input type="password" class="input-box" placeholder="Password"><br>
+                            <input style="float: left; margin: 10px 10px 10px 0;" type="checkbox"><span style="font-size: 13px; float: left; margin: 7px 10px 10px 0;">I agree to the Terms & Condition</span>
+                            <table width="100%">
+                              <tr>
+                                <td><button class="back" onclick="window.location.href='index2.html';">Back</button>
+                                <input type="submit" value="Sign Up" onclick="window.location.href='member.html';"></td>
+                              </tr>
+                            </table>
+                            <p>You already have an account? Sign In</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="sub">
+                    </div>
+                  </div>
+
+            </nav>
+      </div>
+    </div>
+
+<div class="footer">
+
+<table>
+  <tbody>
+    <tr>
+		<th><a href="aboutUS.html">About Us</a></th>
+		<td class="p1"></td>
+		<th><a href="contactUs.html">Contact Us</a></th>
+    </tr>
+    <tr>
+      <td><a href="#">Audiook</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms & Condition</a></td>
+      <td class="p1"></td>
+      <td><a href="#">+123456789</a> | <a href="#">audiook@gmail.com</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>
+
+
+
+    </div>
+
+  </body>
+</html>
